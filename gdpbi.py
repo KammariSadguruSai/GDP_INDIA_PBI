@@ -61,7 +61,7 @@ def login_page():
             st.session_state.logged_in = True
             st.session_state.username = username
             st.success("Logged in successfully!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Invalid credentials")
 
@@ -86,11 +86,11 @@ def reset_page():
 # UI: App Pages
 def home_page():
     st.title("Welcome to India Insights")
-    st.subheader("📊 India's GDP Overview")
+    st.subheader("\ud83d\udcca India's GDP Overview")
     st.write(
         "India is the world's fifth-largest economy by nominal GDP. The country has seen rapid growth over the past few decades due to its large workforce, booming IT sector, and diverse industries."
     )
-    st.subheader("🎨 Indian Art & Culture")
+    st.subheader("\ud83c\udfa8 Indian Art & Culture")
     st.write(
         "India has a rich history of art and culture, ranging from ancient cave paintings in Ajanta to modern Bollywood cinema. The fusion of traditional and contemporary art makes India's cultural landscape unique."
     )
@@ -113,7 +113,7 @@ def logout():
     st.session_state.logged_in = False
     st.session_state.username = None
     st.success("Logged out successfully!")
-    st.experimental_rerun()
+    st.rerun()
 
 # Sidebar Navigation
 def app():
