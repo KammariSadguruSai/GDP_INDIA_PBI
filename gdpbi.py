@@ -107,7 +107,7 @@ def dashboard_page():
     st.title("GDP Dashboard")
     st.write("Below is the embedded Power BI dashboard for India's GDP.")
     st.components.v1.iframe(
-        "https://app.powerbi.com/reportEmbed?reportId=8fa265a1-ef46-4d83-83d8-49383004f7c6&autoAuth=true&ctid=b45e253c-d9f0-4c81-b778-8d3197741240", 
+        "https://app.powerbi.com/view?r=eyJrIjoiNTA3ZDBmMWQtODU2Ni00NmI5LWE2OTktZjBmMTRlZDk4ZjU2IiwidCI6ImZlZjFiNTRhLThjZjYtNDkxMC05ZjFiLWJhZjMzYWMzMDcwMSJ9", 
         width=1140, height=541, scrolling=True
     )
 
